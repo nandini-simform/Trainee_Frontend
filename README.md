@@ -10,29 +10,28 @@ This is the frontend of the full-stack application built with **React.js**. It c
 - **POST**: Sends data to the backend to create new records.
 - **PUT**: Updates existing records in the backend.
 
-## Prerequisites
+## Prerequisites 
 
+- **Python**: Version 3.8 or higher
+- **MongoDB**: Installed and running
 - **Node.js** (latest version)
 - **npm** (Node Package Manager)
 
 ## Getting Started
 
-### 1. Clone the repository
-
-Clone the frontend repository to your local machine:
+### Clone the repository
 
 ```bash
+1.Clone the frontend repository to your local machine:
+
 git clone https://github.com/yourusername/trainee_frontend.git
 cd trainee_frontend
-# Getting Started with Create React App
 
-
-### 2.  Install dependencies
-
+2.  Install dependencies
   npm install
 
-##3. Set up environment variables
-creat .env file
+3. Set up environment variables
+create .env file
 
-### 4. Start the development server
+4. Start the development server
  npm start
