@@ -26,12 +26,13 @@ git clone https://github.com/yourusername/trainee_frontend.git
 cd trainee_frontend
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Install dependencies
+### 2.  Install dependencies
+
   npm install
-##Set up environment variables
+
+##3. Set up environment variables
 creat .env file
 
- ## Start the development server
+### 4. Start the development server
  npm start
