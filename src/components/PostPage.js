@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './PostPage.css';  
 const PostPage = () => {
   const [data, setData] = useState({ name: '', age: '' });
   const [message, setMessage] = useState('');

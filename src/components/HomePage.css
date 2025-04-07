@@ -1,0 +1,61 @@
+/* HomePage Styling */
+/* Center the content and give it a max-width */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Horizontally centers the container */
+    padding: 30px;
+    background-color: #9b3657;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the children horizontally */
+    justify-content: center; 
+    text-align: center;/* Centers the children vertically */
+    height: 100vh; /* Ensures the container takes full height of the viewport */
+  }
+  
+  /* Header styling */
+  .home-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Styling for the header h1 */
+  .home-header h1 {
+  background-color: #c4d38c;
+
+    font-size: 36px;
+  }
+  
+  /* Action section (e.g., buttons) */
+  .home-actions {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Button styling */
+  .add-data-button {
+    padding: 15px 30px;
+    background-color: #98dbb2;
+    color: rgb(60, 14, 114);
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .add-data-button:hover {
+  background-color: #c4d38c;
+  
+  }
+  
+  /* Data section */
+  .home-data {
+    margin-top: 30px;
+  }
+  
+  /* Data*
+  
+  

@@ -1,0 +1,40 @@
+version: '3.8'  # You may want to specify a version for compatibility
+
+services:
+  
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Ensure your file is named Dockerfile (case-sensitive)
+    container_name: reactcontainer
+    ports:
+      - "5001:80"
+    
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: /home/nandini.vyas@simform.dom/Trainee_Backend  # Verify the path exists on the host
+     
+    container_name: flaskcontainer
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    environment:
+      - MONGODB_URI=${MONGODB_URI} 
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27018:27017"
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.runCommand({ ping: 1 })"]
+      interval: 5s
+      retries: 5
+      start_period: 10s
+      timeout: 5s
+
